@@ -9,7 +9,7 @@ description: Create, critique, and redesign compelling presentations with intent
 ## Purpose
 Treat slides as a communication system, not a collection of decorated rectangles. Produce an audience-specific argument, a deliberate aesthetic, and a technically correct, usable deck. When asked to *unslop*, preserve the verified meaning and slide intent while eliminating default AI presentation clichés. This skill supports creating new decks, rewriting, auditing, restyling, building editable decks, and iterating after critique.
 
-**Evidence honesty:** This library was inspired by the public video **“How to Unslop Your AI-Generated Slides”**, https://www.youtube.com/watch?v=fkxw0SrwVkA. Its full transcript was not available during preparation. Do not present these instructions as verbatim or definitive teachings of its speaker. Treat them as an independently developed, evidence-labeled expansion. Only assert video-specific ideas after a transcript or frame reference has been added to `sources/` and checked using `references/source-learning.md`.
+**Evidence honesty:** Inspired by Analyst Academy's [video](https://www.youtube.com/watch?v=fkxw0SrwVkA). The user supplied its timestamped transcript on 2026-11-13. The ten tells and three remedies are mapped in `sources/VIDEO_SOURCE.md`; they are contextual observations, not proof of AI authorship or universal prohibitions. Broader guidance in this library is our independent expansion. No video frames or creator-provided repair prompt have been verified.
 
 ## Fast activation / router
 Before designing, classify user intent and read the minimum necessary reference modules:
@@ -47,6 +47,8 @@ Always read `memory/active-lessons.md` if it contains actual reviewed learning. 
 3. Choose a repeatable visual identity (motif, editorial cue, or unique artifact from the topic), **not** a generic gradient/blob/shadow system.
 4. Lay out key slides first: title, central proof, hardest diagram, main comparison, and closing action. Extrapolate a system from these.
 
+For an existing brand/template, inspect its master, layouts, theme fonts/colors, and placeholders before restyling. Prefer suitable existing layouts; style profiles are fallbacks, not permission to override the supplied template. See `references/engineering-and-editability.md`.
+
 ### Phase 3. Choose slide function before layout
 Select one primary function per slide from `references/slide-functions.md`: orientation, claim, evidence, comparison, mechanism, process, timeline, taxonomy, spatial, quote, case, decision, interactive demo, recap, or action. Select a suitable layout from `references/visual-grammar.md`. A layout should serve thinking, not just vary for variety.
 
@@ -60,7 +62,7 @@ Select one primary function per slide from `references/slide-functions.md`: orie
 - Match all visual details to the semantic claim (e.g. a bar chart for categorical comparison, not a pie because it looks stylish).
 
 ### Phase 5. Run the anti-slop pass
-Audit all slides against `references/anti-slop-audit.md`:
+Audit all slides against `references/anti-slop-audit.md`, including the ten timestamped source tells and their exceptions:
 - Generic title/stock image/opening/ending, robotically consistent three-column cards, rounded boxes everywhere, excessive gradients, shiny illustrations, random icons, overused all-caps eyebrow labels.
 - Repeated rhythm without reason, text overload, indistinct priorities, meaningless data visualization, unreadable labels, false visual precision.
 - **Do not replace functional consistency with gratuitous novelty.** Preserve a coherent deck-level system while varying slide types by semantic function.
@@ -74,7 +76,7 @@ Use `references/quality-assurance.md` and `references/source-integrity.md`.
 5. Delivery: supply requested files and brief design notes. Clearly disclose any unfinished, unverifiable, or flattened elements.
 
 ### Phase 7. Feedback and compounding learning
-Only when the user or a real reviewer gives actionable feedback, record the observed defect, context, fix, and evidence with `scripts/record_feedback.py`; the script rebuilds `memory/active-lessons.md`. If user supplies a verified transcript or frames, use `scripts/import_transcript.py` and annotate claims; do not pretend the model weights changed. The *external skill memory* improves future runs because the agent re-reads it.
+Only when the user or a real reviewer gives actionable feedback, record the observed defect, context, fix, and evidence with `scripts/record_feedback.py`; the script rebuilds `memory/active-lessons.md`. If user supplies a transcript or frames, check their provenance and use `scripts/import_transcript.py` and annotate claims; do not pretend the model weights changed. The *external skill memory* improves future runs because the agent re-reads it.
 
 ## Branch rules
 - **Audit-only:** report highest-impact defects by slide and fixes; never silently edit. See `workflows/audit-only.md`.

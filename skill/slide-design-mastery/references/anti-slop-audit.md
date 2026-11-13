@@ -2,6 +2,30 @@
 
 Slop is **generic design behavior** that distracts from an idea or creates a false impression of polish. Not every gradient, icon, or card is wrong; misuse and repetition are the problem.
 
+## Ten source tells: inspect in context
+Based on the user-supplied timestamped transcript of [Analyst Academy's video](https://www.youtube.com/watch?v=fkxw0SrwVkA). See `sources/VIDEO_SOURCE.md` for provenance and coverage. These are qualitative review cues; a single occurrence does not establish a defect or AI authorship.
+
+| Time | Tell | Repair and legitimate exception |
+|---|---|---|
+| 0:38–1:00 | Pre-title labels: all-caps eyebrows or pills | Remove labels duplicating the title. Keep a concise section marker when it supplies useful navigation. |
+| 1:02–1:22 | Overlapping text | Fix object bounds, wrapping, and spacing; inspect the rendered slide. Intentional layered imagery must still preserve readable text. |
+| 1:22–1:55 | Formulaic titles: colon plus punchline; dash plus contrast | Write the specific, evidence-backed finding in natural language. Punctuation itself is not banned; repeated rhetorical formulas are the signal. |
+| 1:55–2:39 | Too many dramatic takeaway boxes | Keep a box when it bridges to the next slide or reveals a non-obvious insight in the evidence. Remove boxes repeating the headline or merely declaring importance. |
+| 2:39–3:10 | Colored strips along rounded box edges | Remove accent rails that only decorate. Retain an edge if it consistently encodes a meaningful category/status or is required by the brand. |
+| 3:10–3:26 | Forced groups of three | Let the evidence determine item count and layout; don't invent or merge ideas to fill three cards. Three real comparable items remain valid. |
+| 3:26–3:54 | Inflated significance | Replace claims of importance with the concrete consequence and evidence. Keep a clear perspective without unsupported drama. |
+| 3:54–4:28 | Oversized numbers | Size the number to its analytical role; retain units, denominator, period, and comparison. A hero metric can work when it truly is the central evidence. |
+| 4:28–5:16 | Unneeded subtitles and repeated commentary | Check pre-title, headline, subtitle, chart heading, and callout together. Remove repeated meaning; preserve necessary scope, units, caveats, and citations. |
+| 5:16–5:31 | Too many images | Replace decorative imagery with relevant evidence or space. Image-heavy slides can suit visual stories; the speaker's objection concerns ordinary corporate contexts. |
+
+### Attention cost and repair pass
+For every visible element ask: what new information, navigation, or interpretation does it provide? Remove duplication before shrinking type. Distinguish the main conclusion in the headline from a useful secondary insight in a callout.
+
+The source's three remedies (5:40–6:50) are to learn to spot the patterns, use a good template with a proper slide master/layouts, and run a targeted repair prompt after generation. Apply the checklist across the entire deck, then rerender. The original repair prompt was offered separately and is not available here; the prompt below is our own implementation.
+
+**Reusable post-generation prompt:**
+> Review this deck for the ten source tells listed above. For each actual defect, identify the slide, redundant or distracting element, and a concrete repair. Preserve verified claims, units, caveats, citations, and required slide order. Keep justified exceptions and explain them briefly. Use the supplied template's master and layouts where appropriate. Apply repairs when editing is requested; otherwise return findings only. Render the result and check overlap, readability, and deck-level repetition. Report unresolved issues.
+
 ## Priority-weighted audit (0 none, 1 mild, 2 severe)
 | Dimension | Observable tell | Targeted remedy |
 |---|---|---|

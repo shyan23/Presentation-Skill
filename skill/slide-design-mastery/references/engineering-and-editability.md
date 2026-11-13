@@ -12,6 +12,11 @@
 ## PowerPoint architecture
 Prefer theme/master, reusable slide layouts, placeholders for stable content, native tables/charts/text where feasible. Native objects facilitate changes when content evolves. Avoid 300 ungrouped shapes for a simple UI screenshot, but don't flatten a diagram that needs editing. If a screenshot is unavoidable, keep source file and cite it.
 
+## Use a supplied template as a working system
+Inspect actual slide masters, layout names, theme fonts/colors, placeholder types and bounds, and representative populated slides. Map each slide's function to a suitable layout before generating content. Use placeholders where practical, and keep essential content inside their intended bounds. A screenshot or a palette alone does not provide a functional template.
+
+When content does not fit, select a better layout or adapt it coherently; shrinking everything or forcing three cards usually hides the problem. Preserve user-required branding. For a new template, establish reusable layouts for the needed slide functions and verify them with real content. Review the rendered result: inheritance from a master does not guarantee readable slides.
+
 ## Export pipeline
 1. Validate outline and sources.
 2. Build deck in PPTX/HTML/Slides.

@@ -3,7 +3,7 @@
 A portable `.skill` folder to give Claude Code, Codex and other agent-skill readers a consistent method for designing, auditing, and improving slide decks. Here “attire” means **visual aesthetic/style** — 14 distinct visual treatments plus functional slide patterns and QA scripts.
 
 ## Source boundary
-Inspired by [How to Unslop Your AI-Generated Slides](https://www.youtube.com/watch?v=fkxw0SrwVkA). Only the video title/link were independently confirmed. The original transcript / creator identity have **not** been verified. This is an original, general design system, not a claimed transcript or a replica of the creator's exact practice. Add your own transcript to `sources/` if you want source-grounded extraction.
+Inspired by [How to Unslop Your AI-Generated Slides](https://www.youtube.com/watch?v=fkxw0SrwVkA). The user-supplied timestamped transcript was reviewed on 2026-11-13. All ten tells and three remedies are mapped in `sources/VIDEO_SOURCE.md` and implemented in `references/anti-slop-audit.md`. Audio/frames and the separately offered creator prompt were not verified. The broader design system is an independent expansion.
 
 ## Install (Linux/macOS)
 From the directory containing `.skill`:
@@ -36,7 +36,7 @@ The agent does not gain new weights merely by reloading. It can gain persistent 
 - `workflows/`: create, restyle, and critique execution paths.
 - `scripts/`: local style chooser, PPTX static audit, transcript intake, feedback recorder, package validator.
 - `memory/`: reviewed learnings read on future invocations.
-- `sources/`: provenance and empty space for user-supplied material.
+- `sources/`: provenance, timestamped coverage, and source intake.
 - `examples/`: three distinct deck briefs with storyboards.
 - `tests/`: test cases for assessing agent responses.
 

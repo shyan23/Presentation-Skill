@@ -114,7 +114,7 @@ skill/slide-design-mastery/
 ## Credits & attribution
 
 - **Inspiration:** [*How to Unslop Your AI-Generated Slides*](https://www.youtube.com/watch?v=fkxw0SrwVkA) by **[Analyst Academy](https://www.youtube.com/@AnalystAcademy)** on YouTube. All credit for the idea and the "unslop" framing goes to them.
-- **Honesty about what's in this repo:** The video's transcript was not used to build this skill. The guidance here is an independent design system *inspired by* the video. It is **not** a transcript, summary, or official reproduction of Analyst Academy's teaching, and it doesn't speak for them. See [`sources/VIDEO_SOURCE.md`](skill/slide-design-mastery/sources/VIDEO_SOURCE.md).
+- **Honesty about what's in this repo:** The initial skill was built without the transcript. On 2026-11-13, a user-supplied timestamped transcript was reviewed to add all ten tells and three remedies, with a coverage map and contextual exceptions. The broader guidance remains an independent design system *inspired by* the video. It is **not** a transcript, summary, or official reproduction of Analyst Academy's teaching, and it doesn't speak for them. See [`sources/VIDEO_SOURCE.md`](skill/slide-design-mastery/sources/VIDEO_SOURCE.md).
 - If you have the rights to use the transcript, you can import it with `scripts/import_transcript.py` and follow `references/source-learning.md` to add claims tied to timecodes.
 - Check the licenses for any fonts, logos, photos, or video frames before you use them in a deck.
 

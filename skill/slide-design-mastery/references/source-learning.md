@@ -2,7 +2,7 @@
 
 ## Current provenance status
 Video: https://www.youtube.com/watch?v=fkxw0SrwVkA
-Observed title: "How to Unslop Your AI-Generated Slides". Video transcript and speaker metadata could not be reliably retrieved during skill creation. Therefore no statements in this pack are presented as direct quotes or unique methods of that creator.
+The user supplied a timestamped transcript on 2026-11-13; its ten tells and three remedies have been reviewed and mapped in `sources/VIDEO_SOURCE.md`. Audio/frames have not been independently verified, and the author's separately offered prompt is unavailable. Consult that provenance record before attributing a claim. Other guidance remains an independent expansion.
 
 ## Upgrade the skill to faithfully learn from that person
 1. Obtain a transcript via YouTube's "Show transcript" or from a user-authorized transcription of video audio. Preserve transcript language and timecodes if available.
